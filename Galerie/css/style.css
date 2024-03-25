@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', sans-serif;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(240px, 1fr));
+    width: 98%;
+    gap: 70px;
+
+}
+
+
+.box {
+    height: 144px;
+    background-color: #6ba2d9;
+    background-image: url(placeholder-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    background-size: contain;
+    background-origin: content-box;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 19px;
+    width: 95%;
+    padding: 10px;
+   
+}
+
+
+h1 {
+    font-size: 33px;
+}
+
+.box h3 {
+
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px white;
+    font-size: 16px;
+    position: relative;
+    top: 65%
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+   
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+}
